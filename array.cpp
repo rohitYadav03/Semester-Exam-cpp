@@ -4,11 +4,6 @@
 
 using namespace std;
 int main () {
-
-    string name;
-   getline(cin ,name);
-    cout<<name<<endl;
-    cout<<"Length : "<<name.length()<<endl;
     // cout<<"Unit 2 start here -> Array";
 
     // Array => 
