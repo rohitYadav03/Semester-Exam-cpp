@@ -1,56 +1,70 @@
 #include <iostream>
 using namespace std;
 
-int main (){
-   //1.
-    //  cout<<"hello world";
+int main() {
+    // ✅ UNIT 1 => Introduction to C++
 
-    //2. Add 2 numbers
-    // int num1 = 5;
-    // int num2 =10;
-    // cout<<"sum : "<<num1+num2<<endl;
+    // Tokens => Smallest individual units in a C++ program
+    // Keywords => Reserved words with special meanings (e.g., int, float) that cannot be used as variable names
+    // Identifiers => Names used for variables, functions, classes, etc. 
+    //                Must start with a letter (A-Z or a-z) or an underscore (_) and cannot use keywords.
 
-    //3. Take user input and display it
-//  string name;
-//  cout<<"name : ";
-//  cin>>name;
-//  cout<<"name is "<<name;
+    // Literals / Constants => Fixed values that do not change during program execution
+    // Variables => Containers used to store data values
 
-//  4. Check if a number is even or odd
+    // Data Types =>
+    //   1. int     => for integers
+    //   2. float   => for decimal numbers (single precision)
+    //   3. double  => for large decimal numbers (double precision)
+    //   4. string  => for text/strings (requires #include <string>)
+    //   5. char    => for a single character
+    //   6. bool    => for boolean values: true or false
 
-// int number;
-// cout<<"Enter number : ";
-// cin>>number;
-// if (number %2 == 0){
-//     cout<<"Even Number "<<endl;
-// }
-// else{
-//     cout<<"Odd"<<endl;
-// }
+    // Input/Output =>
+    //   cin  >> => to take input
+    //   cout << => to print output
 
-// 5. Find the largest of 3 numbers
+    // iostream => A header file that provides cin, cout functionality (preprocessor directive)
+    // Namespace => Avoids naming conflicts. Using 'using namespace std;' allows you to write cout instead of std::cout
 
-// int a = 50;
-// int b = 90; 
-// int c = 15;
+    // main() function => The entry point of a C++ program. Every C++ program must have one.
 
-// if(a > b && a > c){
-//     cout<<"a is largest ";
-// }
-// else if (b > a && b > c){
-//     cout<<"b is largest";
-// }
-// else{
-//     cout<<"c is largest";
-// }
+    // Operators and Expressions =>
+    //   1. Arithmetic    => +, -, *, /, %
+    //   2. Logical       => &&, ||, !
+    //   3. Assignment    => =, +=, -=, etc.
+    //   4. Relational    => ==, !=, >, <, >=, <=
 
-//6. Use a loop to print numbers 1 to 10
+    // Type Casting =>
+    //   - Implicit => Automatic type conversion (e.g., int + float results in float)
+    //   - Explicit => Manually converting data type (e.g., (float)5 / 2)
 
-for(int i =0 ; i<=10; i++){
-    cout<<i<<endl;
+    // Control Structures =>
+    //   1. if-else
+    //   2. Loops:
+    //       a. for loop
+    //       b. while loop
+    //       c. do-while loop
+
+    // 👉 Example of all 3 loops:
+
+    // For Loop
+    for (int i = 0; i <= 10; i++) {
+        cout << i << "  ";
+    }
+
+    // While Loop
+    int i = 11;
+    while (i <= 20) {
+        cout << i << "  ";
+        i++;
+    }
+
+    // Do-While Loop
+    do {
+        cout << i << "  ";
+        i++;
+    } while (i <= 30);
+
+    return 0;
 }
-
-}
- 
-
-
